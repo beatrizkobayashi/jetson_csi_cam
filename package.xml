@@ -5,15 +5,11 @@
   <description>A package for easily connecting to CSI cameras from the Jetson TX1/TX2 via GStreamer</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
-  <maintainer email="peter@petermoran.org">Peter Moran</maintainer>
+  <maintainer email="dev.kobayashibeatriz@gmail.com">Beatriz Kobayashi</maintainer>
 
 
   <!-- One license tag required, multiple allowed, one license per tag -->
   <license>MIT</license>
-
-
-  <!-- Url tags are optional, but multiple are allowed, one per tag -->
-  <url type="website">http://petermoran.org/csi-cameras-on-tx2/</url>
 
 
   <!-- Author tags are optional, multiple are allowed, one per tag -->

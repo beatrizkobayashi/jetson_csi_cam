@@ -9,6 +9,10 @@ project(jetson_csi_cam)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   gscam
+  roscpp
+  sensor_msgs
+  cv_bridge
+  image_transport
 )
 
 ## System dependencies are found with CMake's conventions
@@ -195,3 +199,17 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+find_package(OpenCV REQUIRED)
+
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+  ${OpenCV_INCLUDE_DIRS}
+)
+
+add_executable(csi_undistort_node src/csi_undistort.cpp)
+
+target_link_libraries(csi_undistort_node
+  ${catkin_LIBRARIES}
+  ${OpenCV_LIBS}
+)
