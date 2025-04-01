@@ -5,7 +5,7 @@
 #include <opencv2/calib3d.hpp>
 #include <opencv2/imgproc.hpp>
 
-cv::Mat K = (cv::Mat_<double>(3, 3) << 600, 0, 960, 0, 600, 540, 0, 0, 1); // Definir os parâmetros de acordo com a calibração da câmera
+cv::Mat K = (cv::Mat_<double>(3, 3) << 600, 0, 960, 0, 600, 540, 0, 0, 1); 
 cv::Mat D = (cv::Mat_<double>(4, 1) << -0.2, 0.1, 0, 0);
 
 
